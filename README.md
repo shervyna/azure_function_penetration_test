@@ -9,10 +9,9 @@ you can:
 ```
 then you will get all user info from db
 3. try to attack using OWASP ZAP tool
-
-Then ZAP is able to detect sql injection.
-![](./images/can_detect_sql_injection.png)
-the zap report for this is under ```reports/can_detect_sql_injection.html```
+    - ZAP is able to detect sql injection.
+    - ![](./images/can_detect_sql_injection.png)
+    - the zap report for this is under ```reports/can_detect_sql_injection.html```
 4. ```docker-compose down```
 ## ZAP not able to detect sql injection (using route params)
 1. add ```route``` to function.json as below:
@@ -42,14 +41,12 @@ the zap report for this is under ```reports/can_detect_sql_injection.html```
 ```
     http://localhost:7071/api/user/' or '1'='1' -- 
 ```
-then you will get all user info from db
+    - then you will get all user info from db
 6. try to attack using OWASP ZAP tool
-
-From above steps you might realize that ZAP does not detect sql injection.
-![](./images/cannot_detect_sql_injection.png)
-(you see that the + sign (whitespace encoding) is not decoded and causes an syntax error instead of penetrating the function)
-
-the zap report for this is under ```reports/cannot_detect_sql_injection.html```
+    - From above steps you might realize that ZAP does not detect sql injection.
+    - ![](./images/cannot_detect_sql_injection.png)
+    - (you see that the + sign (whitespace encoding) is not decoded and causes an syntax error instead of penetrating the function)
+    - the zap report for this is under ```reports/cannot_detect_sql_injection.html```
 6. ```docker-compose down```
 
 #TODO:
