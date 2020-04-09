@@ -11,10 +11,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     if name:
         try:
             conn = psycopg2.connect(
-                database = "penTest",
+                database = "penTestDB",
                 user = "postgres", 
                 password = "postgres",
-                host = "host.docker.internal",
+                host = "docker_postgres",
                 port = "5432")
             with conn.cursor() as cursor:
                 cursor.execute("SELECT * FROM users WHERE name = '%s' " % name)

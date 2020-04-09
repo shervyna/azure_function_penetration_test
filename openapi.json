@@ -7,11 +7,11 @@
     },
     "servers": [
         {
-            "url": "http://localhost:8080/api"
+            "url": "http://localhost:7071/api"
         }
     ],
     "paths": {
-        "/user": {
+        "/users": {
             "get": {
                 "summary": "user",
                 "operationId": "get-user",
