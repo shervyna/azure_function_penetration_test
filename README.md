@@ -5,9 +5,10 @@ you can:
 1. docker-compose up
 2. penetrate function by using 
 ```
-    http://localhost:7071/api/user?name=' or '1'='1' -- 
+http://localhost:7071/api/user?name=' or '1'='1' -- 
 ```
 then you will get all user info from db
+
 3. try to attack using OWASP ZAP tool
     - ZAP is able to detect sql injection.
     - ![](./images/can_detect_sql_injection.png)
@@ -39,9 +40,10 @@ then you will get all user info from db
 4. ```docker-compose up```
 5. penetrate function by using
 ```
-    http://localhost:7071/api/user/' or '1'='1' -- 
+http://localhost:7071/api/user/' or '1'='1' -- 
 ```
-    - then you will get all user info from db
+then you will get all user info from db
+
 6. try to attack using OWASP ZAP tool
     - From above steps you might realize that ZAP does not detect sql injection.
     - ![](./images/cannot_detect_sql_injection.png)
