@@ -11,7 +11,7 @@
         }
     ],
     "paths": {
-        "/users": {
+        "/user": {
             "get": {
                 "summary": "user",
                 "operationId": "get-user",
